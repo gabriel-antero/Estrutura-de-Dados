@@ -54,7 +54,7 @@ void selectionSort(int *array, int N){
     int min, aux;
     for(int i = 0; i < N - 1; ++i){
        min = i;
-       for(int j = i + 1; j < N; --j){
+       for(int j = i + 1; j < N; ++j){
           if(array[j] < array[min])
             min = j;
        }
