@@ -4,13 +4,13 @@
 
 ## :scroll:  Sumário
 [Algoritimos de ordenação](algoritmos-de-ordenação)
-  - [Insertion Sort](insertion-sort)
-  - [Selection Sort](selection-sort)
-  - [Bubble Sort](bubble-sort)
-  - [Merge Sort](merge-sort)
-  - [Quicksort](quicksort)
-  - [Shellsort](shellsort)
+  - [Insertion Sort](Insertion-Sort)
+  - [Selection Sort](Selection-Sort)
+  - [Bubble Sort](Bubble-Sort)
+  - [Merge Sort](merge-Sort)
   
+[Busca Binária]()
+
   ## Algoritmos de ordenação
    - ### Insertion Sort
         Também chamado de ordenação por inserção é um algoritmo que percorre o array da esquerda para direita, começando pelo       segundo elemento, à medida que avança
@@ -20,9 +20,9 @@
       - Video como exemplo: [Insertion Sort](https://www.youtube.com/watch?v=ROalU379l3U).
       </br>
       
-      |                     |Melhor Caso | Caso Médio | Pior Caso |
-      |---------------------|------------|------------|-----------|
-      |Complexidade de Tempo|     O(n)   |    O(n²)  |   O(n²)  |
+      |                     |Melhor Caso | Caso Médio | Pior Caso | Estável |
+      |---------------------|------------|------------|-----------|---------|
+      |Complexidade de Tempo|     O(n)   |    O(n²)  |   O(n²)    |   Sim   |
       
 ```
 void insertionSort(int *array, int N){ 
@@ -44,9 +44,9 @@ void insertionSort(int *array, int N){
       - Video como exemplo: [Selection Sort](https://www.youtube.com/watch?v=Ns4TPTC8whw).
       </br>
 
-      |                     |Melhor Caso | Caso Médio | Pior Caso |
-      |---------------------|------------|------------|-----------|
-      |Complexidade de Tempo|     O(n²)   |    O(n²)  |   O(n²)   |
+      |                     |Melhor Caso | Caso Médio | Pior Caso |  Estável  |
+      |---------------------|------------|------------|-----------|-----------|
+      |Complexidade de Tempo|     O(n²)   |    O(n²)  |   O(n²)   |   Sim     |
 
 
 ```
@@ -72,9 +72,9 @@ void selectionSort(int *array, int N){
       - Video como exemplo: [Bubble Sort](https://www.youtube.com/watch?v=lyZQPjUT5B4).
       </br>
 
-      |                     |Melhor Caso | Caso Médio | Pior Caso |
-      |---------------------|------------|------------|-----------|
-      |Complexidade de Tempo|     O(n)   |    O(n²)   |   O(n²)   |
+      |                     |Melhor Caso | Caso Médio | Pior Caso |  Estável |
+      |---------------------|------------|------------|-----------|----------|
+      |Complexidade de Tempo|     O(n)   |    O(n²)   |   O(n²)   |   Sim    |
       
       
 ```
@@ -95,14 +95,14 @@ void bubbleSort(int *array, int N){
 }
 ```
   - ### Merge Sort
-     Também chamado de ordenação por intercalação, ele usa da estrategia de "dividir para conquistar". Este algoritmo divide o problema em pedações menores até cada pedaço ter apenas um elemento, resolve cada pedaço e depois junta (merge) os resultados.
+     Também chamado de ordenação por intercalação, ele usa da estrategia de "dividir para conquistar". Este algoritmo divide o problema em pedações menores até cada pedaço ter apenas um elemento, resolve cada pedaço e depois junta (merge) os resultados. Tem como vantagem ser mais rapido do que os algoritmos insertion sort, selection sort e bubble sort e desvantagem que ele possui gasto maior no espaço de memória do que os outros algoritmos.
 
       - Video como exemplo: [Merge Sort](https://www.youtube.com/watch?v=XaqR3G_NVoo).
       </br>
 
-      |                     |Melhor Caso | Caso Médio | Pior Caso |
-      |---------------------|------------|------------|-----------|
-      |Complexidade de Tempo| O(nlog(n)) | O(nlog(n)) |O(nlog(n)) |
+      |                     |Melhor Caso | Caso Médio | Pior Caso |  Estável |
+      |---------------------|------------|------------|-----------|----------|
+      |Complexidade de Tempo| O(nlog(n)) | O(nlog(n)) |O(nlog(n)) |    Sim   |
       
  ```  
     void mergeSort(int *vetor, int posicaoInicio, int posicaoFim) {
@@ -150,4 +150,51 @@ void bubbleSort(int *array, int N){
     }
     free(vetorTemp);
 }
+```
+  ## Busca em vetor ordenado 
+  - ### Busca Sequencial
+    Irá procurar o elemento posição por posição, caso o valor procurado seja menor do que a posição atual, o  algoritmo encerra a busca na hora, pois temos a certeza que ele não estará no restante do array. 
+
+  
+      |                     |Melhor Caso | Caso Médio | Pior Caso |  Estável |
+      |---------------------|------------|------------|-----------|----------|
+      |Complexidade de Tempo|       O(1) |   O(n/2)   |  O(n) |    Sim   |
+  
+  
+``` 
+  int buscaSequencia(int *array, int N, int elem){
+    for(int i = 0; i < N; ++i){
+      if(elem == array[i)
+        return i;
+      else if(elem < array[i])
+        return -1;
+    }
+    return -1;
+  }
+```
+
+  - ### Busca Binária
+    A busca binária se trata de um eficiente algoritmo para buscar um item em um array. Ele é baseado na idéia de "divisão e conquista" ou seja ele irá dividir o array ao meio quantas vezes por necessario até buscar o elemento procurado.
+    
+    
+      |                     |Melhor Caso | Caso Médio | Pior Caso |  Estável |
+      |---------------------|------------|------------|-----------|----------|
+      |Complexidade de Tempo|       O(1) | O(log n)   |  O(log n) |    Sim   |
+
+``` 
+  int buscaBinaria(int *array, int N, int elem){
+    int inicio, meio, final;
+    inicio  = 0;
+    final = N - 1;
+    while(inicio <= final) {
+      meio = (inicio + final)/2;
+      if(elem < array[meio])
+        final = meio - 1;
+      else if (elem > array[meio])
+        inicio = meio + 1;
+      else
+        return meio;
+    }
+    return -1;
+  }
 ```
