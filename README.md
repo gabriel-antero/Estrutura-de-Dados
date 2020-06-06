@@ -67,7 +67,7 @@ void selectionSort(int *array, int N){
 }
 ```
   - ### Bubble Sort
-   Também chamado de ordenação por bolha, compara pares de valores adjacentes e troca de lugar caso a ordem esteja errada, o    processo de troca ocorrerá quantas vezes forem necessarios para que todos os valores estejam ordenados. Tem como vantagem     a facil implementação e desvantagem a baixa eficiência para valores de entradas grandes.
+    Também chamado de ordenação por bolha, compara pares de valores adjacentes e troca de lugar caso a ordem esteja errada, o    processo de troca ocorrerá quantas vezes forem necessarios para que todos os valores estejam ordenados. Tem como vantagem    a facil implementação e desvantagem a baixa eficiência para valores de entradas grandes.
    
       - Video como exemplo: [Bubble Sort](https://www.youtube.com/watch?v=lyZQPjUT5B4).
       </br>
