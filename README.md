@@ -9,7 +9,9 @@
   - [Bubble Sort](Bubble-Sort)
   - [Merge Sort](merge-Sort)
   
-[Busca Binária]()
+[Busca em vetor ordenado]()
+  - [Busca Sequencial]()
+  - [Busca Binária]()
 
   ## Algoritmos de ordenação
    - ### Insertion Sort
