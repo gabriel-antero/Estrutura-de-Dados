@@ -4,10 +4,10 @@
 
 ## :scroll:  Sumário
 [Algoritimos de ordenação](algoritmos-de-ordenação)
-  - [Insertion Sort](Insertion-Sort)
-  - [Selection Sort](Selection-Sort)
-  - [Bubble Sort](Bubble-Sort)
-  - [Merge Sort](merge-Sort)
+  - [Insertion Sort](#insertion-sort)
+  - [Selection Sort](#selection-sort)
+  - [Bubble Sort](#bubble-sort)
+  - [Merge Sort](#merge-sort)
   
 [Busca em vetor ordenado]()
   - [Busca Sequencial]()
@@ -18,6 +18,12 @@
         Também chamado de ordenação por inserção é um algoritmo que percorre o array da esquerda para direita, começando pelo       segundo elemento, à medida que avança
       vai ordenando os elementos à esquerda, analisando posição por posição. Tem como vantagem a fácil implementação e um dos       mais rápidos algoritmos de ordenação
       para pequenas entradas. 
+      
+      <h1 align="center">
+       <img width="500" 
+          alt="Insertion Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/insertionsort.gif"
+          style="max-width:10%;" />
+       </h1>
       
       - Video como exemplo: [Insertion Sort](https://www.youtube.com/watch?v=ROalU379l3U).
       </br>
@@ -42,6 +48,12 @@ void insertionSort(int *array, int N){
       Também chamado de ordenação por seleção, ele irá selecionar o valor mais a esquerda e comparar com todos os valores a sua direita, 
       caso algum valor a direita do selecionado seja menor, eles irão trocar de posição. Tem como vantagem a fácil implementação 
       e desvantagem de baixa eficência para valores muito grandes.
+      
+      <h1 align="center">
+       <img width="500" 
+          alt="Selection Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/Selection-Sort.gif"
+          style="max-width:10%;" />
+       </h1>
       
       - Video como exemplo: [Selection Sort](https://www.youtube.com/watch?v=Ns4TPTC8whw).
       </br>
@@ -71,6 +83,12 @@ void selectionSort(int *array, int N){
   - ### Bubble Sort
     Também chamado de ordenação por bolha, compara pares de valores adjacentes e troca de lugar caso a ordem esteja errada, o    processo de troca ocorrerá quantas vezes forem necessarios para que todos os valores estejam ordenados. Tem como vantagem    a facil implementação e desvantagem a baixa eficiência para valores de entradas grandes.
    
+       <h1 align="center">
+        <img width="500" 
+          alt="Bubble Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/Bubble-sort.gif"
+          style="max-width:10%;" />
+       </h1>
+   
       - Video como exemplo: [Bubble Sort](https://www.youtube.com/watch?v=lyZQPjUT5B4).
       </br>
 
@@ -98,6 +116,12 @@ void bubbleSort(int *array, int N){
 ```
   - ### Merge Sort
      Também chamado de ordenação por intercalação, ele usa da estrategia de "dividir para conquistar". Este algoritmo divide o problema em pedações menores até cada pedaço ter apenas um elemento, resolve cada pedaço e depois junta (merge) os resultados. Tem como vantagem ser mais rapido do que os algoritmos insertion sort, selection sort e bubble sort e desvantagem que ele possui gasto maior no espaço de memória do que os outros algoritmos.
+    
+      <h1 align="center">
+        <img width="500" 
+          alt="Merge Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/merge-sort.gif"
+          style="max-width:10%;" />
+       </h1>
 
       - Video como exemplo: [Merge Sort](https://www.youtube.com/watch?v=XaqR3G_NVoo).
       </br>
@@ -178,6 +202,11 @@ void bubbleSort(int *array, int N){
   - ### Busca Binária
     A busca binária se trata de um eficiente algoritmo para buscar um item em um array. Ele é baseado na idéia de "divisão e conquista" ou seja ele irá dividir o array ao meio quantas vezes por necessario até buscar o elemento procurado.
     
+      <h1 align="center">
+        <img width="500" 
+          alt="Merge Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/binary-search.gif"
+          style="max-width:10%;" />
+       </h1>    
     
       |                     |Melhor Caso | Caso Médio | Pior Caso |  Estável |
       |---------------------|------------|------------|-----------|----------|
