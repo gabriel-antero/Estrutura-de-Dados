@@ -204,7 +204,7 @@ void bubbleSort(int *array, int N){
     
       <h1 align="center">
         <img width="500" 
-          alt="Merge Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/binary-search.gif"
+          alt="Binary Search" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/binary-search.gif"
           style="max-width:10%;" />
        </h1>    
     
