@@ -3,15 +3,18 @@
 </h1> 
 
 ## :scroll:  Sumário
-[Algoritimos de ordenação](algoritmos-de-ordenação)
+**Algoritimos de ordenação**
   - [Insertion Sort](#insertion-sort)
   - [Selection Sort](#selection-sort)
   - [Bubble Sort](#bubble-sort)
   - [Merge Sort](#merge-sort)
   
-[Busca em vetor ordenado]()
-  - [Busca Sequencial]()
-  - [Busca Binária]()
+**Busca em vetor ordenado**
+  - [Busca Sequencial](#busca-sequencial)
+  - [Busca Binária](#busca-binária) 
+  
+  [Listas Encadeadas](#listas-encadeadas)
+  
 
   ## Algoritmos de ordenação
    - ### Insertion Sort
@@ -229,3 +232,50 @@ void bubbleSort(int *array, int N){
     return -1;
   }
 ```
+
+## Listas Encadeadas
+  Ao contrário de arrays que possuem os elementos um do lado do outro fisicamente na memória, as listas encadeadas possuem seus elementos espalhados, porém cada elemento estará dentro de uma célula que aponta para a próxima da lista de forma que fiquem "ligadas" ou "encadeadas" entre si, por isso o nome.
+  
+  - Lista encadeada também chamada de lista ligada.
+  - O endereço de uma lista é o endereço da primeira célula.
+  - A cabeça da lista é o primeira célula.
+  - O rabo da lista é a ultima célula.
+  - O ultima célula da lista simplesmente e duplamente encadeada apontam para NULL.
+  
+ **Lista simplesmente encadeada:** 
+    É quando a lista aponta apenas para o proximo elemento, ou seja, ela percorrerá por apenas um sentido.
+    
+   <h1 align="center">
+        <img width="500" 
+          alt="Lista Simplesmente Encadeada" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/lista-simplesmente-encadeada.png"
+          style="max-width:10%;" />
+    </h1>   
+    
+  **Lista duplamente encadeada:** 
+    É quando a célula aponta para a célula anterior e para próxima, ou seja, ela percorrerá por dois sentidos.
+  
+  <h1 align="center">
+        <img width="500" 
+          alt="Lista Simplesmente Encadeada" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/lista-duplamente-encadeada.png"
+          style="max-width:10%;" />
+    </h1>  
+  
+  **Lista Circular:** 
+    É quando a ultima célula tem como o seu proximo a primeira célula da lista.
+
+  <h1 align="center">
+        <img width="500" 
+          alt="Lista Simplesmente Encadeada" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/lista-circular.png"
+          style="max-width:10%;" />
+    </h1>  
+
+  **Implementações na lista**
+  - tamanho() - Retorna o número de elementos de dados na lista, mesma coisa da função size()
+  - vazio() - retorna verdade se tiver vazia, equivalente a função empty().
+  - inserir_inicio(valor) - adiciona um item no início da lista, equivalente a push_front(value).
+  - inserir_final(valor) - adiciona um item no final da lista, equivalente a push_back(value).
+  - remover_final() - remove um item do final da lista, equivalente a pop_back().
+  - mostrar() - irá imprimir todos os elementos da lista.
+  - existe(valor) - irá retornar verdadeiro caso o valor exista na lista.
+  
+  Codigo com todas essas implementações, para uma lista simplesmente encadeada: [Lista Simplesmente Encadeada](https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/codes/lista-simplesmente-encadeada.cpp)
