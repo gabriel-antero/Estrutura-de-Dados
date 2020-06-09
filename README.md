@@ -1,20 +1,45 @@
 <h1 align="center">
+  <img width="200" 
+  alt="Estrutura de dados" 
+  src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/cubo.svg"
+  style="max-width:10%;" >
+</h1>
+
+<h2 align="center">
   Estrutura de Dados
-</h1> 
+</h2> 
+
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gabriel-antero/Estrutura-de-Dados">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gabriel-antero/Estrutura-de-Dados">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gabriel-antero/Estrutura-de-Dados">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gabriel-antero/Estrutura-de-Dados">
+</p>
+
+<h4 align="center">
+  Repositório com pequenos resumos sobre assuntos abordados na matéria de estrutura de dados  
+</h4>
 
 ## :scroll:  Sumário
-**Algoritimos de ordenação**
+**[Algoritmos de ordenação](#algoritmos-de-ordenação)**
   - [Insertion Sort](#insertion-sort)
   - [Selection Sort](#selection-sort)
   - [Bubble Sort](#bubble-sort)
   - [Merge Sort](#merge-sort)
   
-**Busca em vetor ordenado**
+**[Busca em vetor ordenado](#busca-em-vetor-ordenado)**
   - [Busca Sequencial](#busca-sequencial)
   - [Busca Binária](#busca-binária) 
   
-  [Listas Encadeadas](#listas-encadeadas)
+**[Listas Encadeadas](#listas-encadeadas)**
+
+**[Stack (Pilha)](#pilha)**
+
+**[Queue (Fila)](#fila)**
   
+**[Árvores (Em breve)]()**
+
+**[Grafos (Em breve)]()**
 
   ## Algoritmos de ordenação
    - ### Insertion Sort
@@ -24,7 +49,8 @@
       
       <h1 align="center">
        <img width="500" 
-          alt="Insertion Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/insertionsort.gif"
+          alt="Insertion Sort" 
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/insertionsort.gif"
           style="max-width:10%;" />
        </h1>
       
@@ -54,7 +80,8 @@ void insertionSort(int *array, int N){
       
       <h1 align="center">
        <img width="500" 
-          alt="Selection Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/Selection-Sort.gif"
+          alt="Selection Sort" 
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/Selection-Sort.gif"
           style="max-width:10%;" />
        </h1>
       
@@ -88,7 +115,8 @@ void selectionSort(int *array, int N){
    
        <h1 align="center">
         <img width="500" 
-          alt="Bubble Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/Bubble-sort.gif"
+          alt="Bubble Sort"
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/Bubble-sort.gif"
           style="max-width:10%;" />
        </h1>
    
@@ -122,7 +150,8 @@ void bubbleSort(int *array, int N){
     
       <h1 align="center">
         <img width="500" 
-          alt="Merge Sort" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/merge-sort.gif"
+          alt="Merge Sort" 
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/merge-sort.gif"
           style="max-width:10%;" />
        </h1>
 
@@ -207,7 +236,8 @@ void bubbleSort(int *array, int N){
     
       <h1 align="center">
         <img width="500" 
-          alt="Binary Search" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/binary-search.gif"
+          alt="Binary Search" 
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/binary-search.gif"
           style="max-width:10%;" />
        </h1>    
     
@@ -247,7 +277,8 @@ void bubbleSort(int *array, int N){
     
    <h1 align="center">
         <img width="500" 
-          alt="Lista Simplesmente Encadeada" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/lista-simplesmente-encadeada.png"
+          alt="Lista Simplesmente Encadeada" 
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/lista-simplesmente-encadeada.png"
           style="max-width:10%;" />
     </h1>   
     
@@ -256,7 +287,8 @@ void bubbleSort(int *array, int N){
   
   <h1 align="center">
         <img width="500" 
-          alt="Lista Simplesmente Encadeada" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/lista-duplamente-encadeada.png"
+          alt="Lista Duplamente Encadeada" 
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/lista-duplamente-encadeada.png"
           style="max-width:10%;" />
     </h1>  
   
@@ -265,7 +297,8 @@ void bubbleSort(int *array, int N){
 
   <h1 align="center">
         <img width="500" 
-          alt="Lista Simplesmente Encadeada" src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/lista-circular.png"
+          alt="Lista Circular"
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/lista-circular.png"
           style="max-width:10%;" />
     </h1>  
 
@@ -279,3 +312,39 @@ void bubbleSort(int *array, int N){
   - existe(valor) - irá retornar verdadeiro caso o valor exista na lista.
   
   Codigo com todas essas implementações, para uma lista simplesmente encadeada: [Lista Simplesmente Encadeada](https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/codes/lista-simplesmente-encadeada.cpp)
+  
+  ## Pilha
+É uma estrutura de dados conhecida como LIFO (Last In First Out), ou seja, o ultimo elemento adicionado é o primeiro a sair ou então FILO(First In Last Out) o primeiro elemento adicionado é o ultimo a sair. Pode ser feita uma analogia com uma pilha (montanha) de livros, quando estamos bucando um livro que está na parte de baixo da pilha, vamos sempre removendo os livros que estão em cima até chegar aos livros que estão no embaixo.
+
+ <h1 align="center">
+        <img width="500" 
+          alt="Pilha" 
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/pilha.png"
+          style="max-width:10%;" />
+    </h1> 
+
+**Implementações para pilha**
+- empilha(valor) - Irá adicionar um elemento na ultima posição.
+- desempilhar(valor) - Irá remover o outro elemento.
+- getTopo() - Irá pegar o valor do ultimo elemento.
+- vazia() - Irá verificar se a pilha está vazia, 0 para falso e 1 para verdadeiro.
+
+Codigo com implementações: [Pilha](https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/codes/pilha.cpp)
+ 
+ ## Fila
+  É uma estrutura de dados como FIFO (First In First Out), ou seja, o primeiro elemento a entrar é o ultimo elemento a sair, ele é justamente o contrário da Pilha. Pode ser feita uma analogia com uma fila qualquer, por exemplo, em uma fila de supermercado o primeiro cliente a chegar será o primeiro cliente a sair ( a ser atendido) e o ultimo a chegar será o ultimo a ser atendido.
+  
+  <h1 align="center">
+        <img width="500" 
+          alt="Fila" 
+          src="https://github.com/gabriel-antero/Estrutura-de-Dados/blob/master/assets/fila.png"
+          style="max-width:10%;" />
+    </h1> 
+    
+---
+
+Por [Gabriel Antero](https://github.com/gabriel-antero).
+
+Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik" title="Freepik">Freepik</a> from  <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com </a>
+  
+ 
